@@ -1,4 +1,4 @@
-import { HttpClient, HttpStatusCode } from 'infra/protocols/http'
+import { HttpClient, HttpStatusCode } from '../../infra/protocols/http'
 import { RandomFact } from 'domain/usecases'
 import { Result } from 'domain/models'
 

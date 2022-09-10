@@ -1,4 +1,4 @@
-import { HttpClient, HttpStatusCode } from 'infra/protocols/http'
+import { HttpClient, HttpStatusCode } from '../../infra/protocols/http'
 import { Categories } from 'domain/usecases'
 
 export class CategoriesService implements Categories {
