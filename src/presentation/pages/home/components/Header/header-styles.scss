@@ -1,0 +1,14 @@
+@import "../../../../styles/mediaQueries.scss";
+
+.header {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-family: 'Fredoka One'
+}
+
+@media (max-width: $sm) {
+  .header {
+    font-size: 2.5rem;
+  }
+}
