@@ -1,0 +1,28 @@
+@import "../../../../styles/colors.scss";
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 2rem 0;
+  text-align: justify;
+
+  &__quote {
+    font-size: 1.5rem;
+    margin: 1rem 0.5rem;
+  }
+
+  &__createdDate, &__categories {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+
+    &--pill {
+      padding: 0.2rem;
+      border: 1px solid $blue;
+      border-radius: 5px;
+    }
+  }
+}
