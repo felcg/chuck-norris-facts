@@ -1,0 +1,45 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/mediaQueries.scss";
+
+.inputWrapper {
+  
+  &__input {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    min-width: 300px;
+    border-radius: 5px;
+    border: 1px solid $gray;
+  }
+  
+  &__button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background: $blue;
+    min-width: 60px;
+    margin-right: 1rem;
+    cursor: pointer;
+
+    &:disabled {
+      cursor: not-allowed
+    }
+  }
+
+  &__select {
+    &--categories {
+      border-radius: 5px;
+      border-color: #87cefa;
+      padding: 0.5rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
