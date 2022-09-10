@@ -1,0 +1,25 @@
+@import "../../../../styles/colors.scss";
+
+.pagination {
+  margin: 1rem;
+  display: flex;
+
+  &__button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background: $blue;
+    min-width: 60px;
+    margin-right: 0.5rem;
+
+    &:disabled {
+      background-color: $gray;
+      cursor: not-allowed;
+    }
+  }
+
+  &__select {
+    border-radius: 5px;
+    border-color: $blue
+  }
+}
