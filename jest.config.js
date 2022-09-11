@@ -19,8 +19,9 @@ module.exports = {
     ".+\\.(ts|tsx)$": "ts-jest",
   },
   moduleNameMapper: {
-    ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$":
-      "identity-obj-proxy",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+      "<rootDir>/tests/mocks/mock-image.js",
+    ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
     ...pathsToModuleNameMapper(compilerOptions.paths, {
       prefix: "<rootDir>/src",
     }),

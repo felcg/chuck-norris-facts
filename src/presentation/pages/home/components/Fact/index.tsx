@@ -26,7 +26,9 @@ const Fact: React.FC<Props> = ({ fact }) => {
     <>
       {formattedFact && (
         <section className="fact">
-          <q className="fact__quote">{formattedFact.value}</q>
+          <q className="fact__quote" data-testid={"fact__quote"}>
+            {formattedFact.value}
+          </q>
           <p className="fact__createdDate">
             <strong>Created at: </strong> {formattedFact.created_at}
           </p>
