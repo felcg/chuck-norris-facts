@@ -25,7 +25,6 @@
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:ci": "npm test -- --coverage",
     "eject": "react-scripts eject",
-    "prepare": "husky install",
     "commit": "git-cz"
   },
   "eslintConfig": {
@@ -52,7 +51,6 @@
     "commitizen": "^4.2.5",
     "craco-alias": "^3.0.1",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest-environment-jsdom": "^29.0.3",
     "react-app-rewired": "^2.2.1",
