@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# Chuck Norris Facts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple React app for interacting with **[chucknorris.io](https://api.chucknorris.io/)** API.
 
-## Available Scripts
+## Instructions on how to run the project
 
-In the project directory, you can run:
+After unzipping the project files you simply have to install the dependencies with
+`npm install`. Then run the app with `npm start`. Both commands must be run from the root of the project.
 
-### `npm start`
+## Tests
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To run tests you have two options `npm run test` and `npm run test:ci`, the difference being that the second option also shows the coverage percentage of tests.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Comments
 
-### `npm test`
+For this project I followed some of the concepts of Domain Driven Design, so the code is split in different layers:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Application Layer:
 
-### `npm run build`
+> Responsible for applying the usecase rules defined in the Domain Layer. Example: A Query class will actually process what is defined in the Query interface and will make a query.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Domain Layer:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> Responsible for creating the interfaces that define how our usecases will work. Example: A Query interface will define what an Query inplementation needs to have to work properly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Infra Layer
 
-### `npm run eject`
+> Responsible for implementing interfaces that communicate with external libraries/apis/packages. Example: A Query class from the application layer needs to speak with an API, so the ApiHttpClient Class is created on the Infra layer.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Presentation Layer
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Responsible for interaction with user, in the case of a React app it would be the rendering of views and control of the state of the app.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Main Layer
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+> Responsible for settings related to the entire project.
