@@ -13,7 +13,8 @@ const Input: React.FC = () => {
   const [input, setInput] = useState("");
   const [categories, setCategories] = useState<string[]>([]);
   const [category, setCategory] = useState("");
-  const { setFacts, setLoading, setTotalFacts } = useContext(FactsContext);
+  const { setFacts, setLoading, setTotalFacts, setPageNumber } =
+    useContext(FactsContext);
   const httpClient = new AxiosHttpClient();
   const searchService = new SearchService(ChuckNorrisApi.searchUrl, httpClient);
   const randomService = new RandomFactService(
@@ -49,6 +50,7 @@ const Input: React.FC = () => {
         setFacts(result);
         setTotalFacts(total);
       }
+      setPageNumber(1);
     } catch (error) {
       console.log(error);
     } finally {

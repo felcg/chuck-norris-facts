@@ -12,6 +12,7 @@ export type FactContextInterface = {
   setFacts: Dispatch<SetStateAction<Result[] | undefined>>;
   setLoading: Dispatch<SetStateAction<boolean>>;
   setTotalFacts: Dispatch<SetStateAction<number>>;
+  setPageNumber: Dispatch<SetStateAction<number>>;
   handlePrev: () => void;
   handleNext: () => void;
   handleFactsPerPage: (number: number) => void;

@@ -4,15 +4,15 @@ import "./pagination-styles.scss";
 
 const Pagination: React.FC = () => {
   const {
+    facts,
     pageNumber,
     handlePrev,
     handleNext,
     handleFactsPerPage,
-    paginatedFacts,
     factsPerPage,
   } = useContext(FactsContext);
 
-  const disableNext = paginatedFacts && factsPerPage > paginatedFacts.length;
+  const disableNext = facts && factsPerPage * pageNumber >= facts.length;
   const disablePrev = pageNumber === 1;
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {

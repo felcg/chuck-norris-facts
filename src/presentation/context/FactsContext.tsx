@@ -13,6 +13,7 @@ const contextDefaultValues: FactContextInterface = {
   setFacts: () => {},
   setLoading: () => {},
   setTotalFacts: () => {},
+  setPageNumber: () => {},
   handlePrev: () => {},
   handleNext: () => {},
   handleFactsPerPage: () => {},
@@ -51,18 +52,19 @@ const FactsProvider: React.FC<Props> = ({ children }) => {
     <FactsContext.Provider
       value={{
         facts,
-        setFacts,
         paginatedFacts,
-        setPaginatedFacts,
         pageNumber,
         factsPerPage,
         handlePrev,
         handleNext,
         handleFactsPerPage,
         loading,
-        setLoading,
         totalFacts,
+        setFacts,
+        setLoading,
+        setPaginatedFacts,
         setTotalFacts,
+        setPageNumber,
       }}
     >
       {children}
