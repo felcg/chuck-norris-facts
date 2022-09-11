@@ -1,7 +1,7 @@
-import { RandomFactService } from '../../src/application/usecases'
+import { RandomFactService } from '@application/usecases'
 import { HttpClientSpy } from '../mocks/mock-http'
 import { faker } from '@faker-js/faker'
-import { HttpStatusCode } from '../../src/infra/protocols/http'
+import { HttpStatusCode } from '@infra/protocols/http'
 
 
 type SutTypes = {

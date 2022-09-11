@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
-import { Home } from "presentation/pages";
+import { Home } from "@presentation/pages";
 
 const Router: React.FC = () => {
   return (

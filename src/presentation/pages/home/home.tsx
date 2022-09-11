@@ -7,7 +7,9 @@ import {
   Facts,
   Pagination,
 } from "./components";
-import FactsProvider, { FactsContext } from "presentation/context/FactsContext";
+import FactsProvider, {
+  FactsContext,
+} from "@presentation/context/FactsContext";
 import { useContext } from "react";
 
 const Home: React.FC = () => {

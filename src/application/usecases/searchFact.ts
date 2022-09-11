@@ -1,6 +1,6 @@
-import { HttpClient, HttpStatusCode } from '../../infra/protocols/http'
-import { SearchFact } from 'domain/usecases'
-import { SearchResponse } from 'domain/models'
+import { HttpClient, HttpStatusCode } from '@infra/protocols/http'
+import { SearchFact } from '@domain/usecases'
+import { SearchResponse } from '@domain/models'
 
 export class SearchService implements SearchFact {
   constructor (

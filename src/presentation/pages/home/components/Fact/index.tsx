@@ -1,4 +1,4 @@
-import { Result } from "domain/models";
+import { Result } from "@domain/models";
 import React, { useEffect, useState } from "react";
 import "./fact-styles.scss";
 

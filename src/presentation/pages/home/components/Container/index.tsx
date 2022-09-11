@@ -1,4 +1,4 @@
-import { Props } from "presentation/protocols";
+import { Props } from "@presentation/protocols";
 import React from "react";
 import "./container-styles.scss";
 

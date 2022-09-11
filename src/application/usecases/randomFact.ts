@@ -1,6 +1,6 @@
-import { HttpClient, HttpStatusCode } from '../../infra/protocols/http'
-import { RandomFact } from 'domain/usecases'
-import { Result } from 'domain/models'
+import { HttpClient, HttpStatusCode } from '@infra/protocols/http'
+import { RandomFact } from '@domain/usecases'
+import { Result } from '@domain/models'
 
 export class RandomFactService implements RandomFact {
   constructor (

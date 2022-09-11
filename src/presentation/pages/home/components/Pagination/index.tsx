@@ -1,4 +1,4 @@
-import { FactsContext } from "presentation/context";
+import { FactsContext } from "@presentation/context";
 import React, { useContext } from "react";
 import "./pagination-styles.scss";
 

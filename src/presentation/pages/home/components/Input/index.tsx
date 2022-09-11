@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
-import { FactsContext } from "presentation/context";
+import { FactsContext } from "@presentation/context";
 import {
   SearchService,
   CategoriesService,
   RandomFactService,
-} from "application/usecases";
-import { AxiosHttpClient } from "infra/http";
-import { ChuckNorrisApi } from "infra/protocols/chuckNorrisApi";
+} from "@application/usecases";
+import { AxiosHttpClient } from "@infra/http";
+import { ChuckNorrisApi } from "@infra/protocols/chuckNorrisApi";
 import "./input-styles.scss";
 
 const Input: React.FC = () => {

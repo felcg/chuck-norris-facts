@@ -1,4 +1,4 @@
-import { Result } from "domain/models";
+import { Result } from "@domain/models";
 import { Dispatch, SetStateAction } from "react";
 
 export type FactContextInterface = {

@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react";
-import { Result } from "domain/models";
-import { FactContextInterface, Props } from "presentation/protocols";
+import { Result } from "@domain/models";
+import { FactContextInterface, Props } from "@presentation/protocols";
 
 const contextDefaultValues: FactContextInterface = {
   paginatedFacts: [],

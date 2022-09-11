@@ -1,5 +1,5 @@
 
-import { HttpRequest, HttpResponse, HttpClient } from 'infra/protocols/http'
+import { HttpRequest, HttpResponse, HttpClient } from '@infra/protocols/http'
 
 import axios, { AxiosResponse } from 'axios'
 
