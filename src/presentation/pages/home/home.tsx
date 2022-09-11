@@ -6,6 +6,7 @@ import {
   Fact,
   Facts,
   Pagination,
+  NotFound,
 } from "./components";
 import FactsProvider, {
   FactsContext,
@@ -29,7 +30,7 @@ const Home: React.FC = () => {
           return <Fact fact={fact} key={fact.id} />;
         })}
       </Facts>
-      {noFactsFound && <div>No facts found.</div>}
+      {noFactsFound && <NotFound />}
     </Container>
   );
 };

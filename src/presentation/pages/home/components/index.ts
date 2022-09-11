@@ -6,4 +6,5 @@ export { default as Fact } from './Fact'
 export { default as Facts } from './Facts'
 export { default as Pagination } from './Pagination'
 export { default as Spinner } from './Spinner'
+export { default as NotFound } from './NotFound'
 
