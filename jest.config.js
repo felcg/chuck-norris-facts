@@ -1,3 +1,6 @@
+const { pathsToModuleNameMapper } = require("ts-jest");
+const { compilerOptions } = require("./tsconfig.paths.json");
+
 module.exports = {
   roots: ["<rootDir>/src", "<rootDir>/tests"],
   collectCoverageFrom: [
@@ -14,5 +17,12 @@ module.exports = {
   testEnvironment: "jsdom",
   transform: {
     ".+\\.(ts|tsx)$": "ts-jest",
+  },
+  moduleNameMapper: {
+    ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$":
+      "identity-obj-proxy",
+    ...pathsToModuleNameMapper(compilerOptions.paths, {
+      prefix: "<rootDir>/src",
+    }),
   },
 };

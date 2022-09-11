@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^7.0.0-alpha.7",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -19,8 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "craco start",
+    "build": "craco build",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:ci": "npm test -- --coverage",
@@ -50,8 +51,10 @@
     "@faker-js/faker": "^7.5.0",
     "@types/jest": "^29.0.0",
     "commitizen": "^4.2.5",
+    "craco-alias": "^3.0.1",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest-environment-jsdom": "^29.0.3",
     "react-app-rewired": "^2.2.1",
     "ts-jest": "^29.0.0"

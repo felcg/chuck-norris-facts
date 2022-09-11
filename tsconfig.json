@@ -15,8 +15,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "rootDirs": ["src", "tests"],
-    "baseUrl": "src"
+    "rootDirs": ["src", "tests"]
   },
+  "extends": "./tsconfig.paths.json",
   "include": ["src"]
 }
